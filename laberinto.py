@@ -75,6 +75,30 @@ def play():
     "¿?", "¿?", "¿?", "¿?", "¿?", "¿?",
     "?¿", "¿?", "¿?", "¿?", "¿?", "¿?"
     ]
-    print (lab_initial)
-    print("Iniciamos el labeerinto en la posición 0, donde las demás posiciones pueden ser la posición que nos lleva a la salida o un obstáculo que nos impide avanzar.")
+    print(lab_initial)
+    print("Iniciamos el laberinto en la posición 0, donde las demás posiciones pueden ser la posición que nos lleva a la salida o un obstáculo que nos impide avanzar.")
+
+while True:    
+    #Empezamos con el bucle para los movimientos
+    total_place = (place_x*6) + place_y
+
+    #Si la posición elegida es la correcta pasara de ¿? a "", mientras que si es erronea cambiará a X
+    lab_initial(total_place) = ""
+    movement()
+    total_place = (place_x*6) + place_y
+    if lab_solution(total_place) == "X":
+        print("Ese movimiento ha derivado en un obstáculo, por lo que vuelve a la posición inicial.")
+        place_y = 0
+        place_x = 0
+        print(lab_initial) 
+    elif lab_solution(total_place) == " ":
+        print("La posición escogida fue correcta, puede continuar el laberinto.")
+        lab_initial(total_place)= 0
+        print(lab_inital)
+    elif lab_solution(total_place) == "S":
+        print("¡Enhorabuena! Ha encontrado la salida del laberinto!")
+        print("Los pasos para salir fueron los siguientes:")
+        print (howtogetout)
+        break
+        #Finalizamos el bucle
     
