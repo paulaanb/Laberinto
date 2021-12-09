@@ -4,6 +4,8 @@ En este proyecto hemos creado un juego de un laberinto en el cual hay una entrad
 Para soluciar el juego debes indicar en que direccion deseas moverte, y el programa te indica si em esa posicion hay una obstaculo, o por el contrario es el camino correcto para llegar a la salida.
 El diagrama de flujo se muestra a continuación:
 <img width="765" alt="Captura de pantalla 2021-12-09 a las 12 45 57" src="https://user-images.githubusercontent.com/91721496/145391507-e49756a2-a288-4f69-86d9-e7219813d0f9.png">
+
+
 El código es :
 ```#Importamos las librerias
 import math
