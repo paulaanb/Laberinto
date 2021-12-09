@@ -42,6 +42,8 @@ def movement():
     print("2-> IZQUIERDA")
     print("3-> ARRIBA")
     print("4-> ABAJO")
+    global place_x
+    global place_y
     movement = int(input("Escoja un movimiento entre los disponibles."))
     if movement == 1:
         place_x += 1
@@ -62,3 +64,17 @@ def movement():
         place_y += 1
         return place_y
 
+#Establecemos una función para empezar a movernos en el laberinto y insertamos el laberinto en blanco
+def play():
+    global place_x
+    global place_y
+    lab_initial= [
+    "0", "¿?", "¿?", "¿?", "¿?", "¿?",
+    "¿?", "¿?", "¿?", "¿?", "¿?", "¿?",
+    "¿?", "¿?", "¿?", "¿?", "¿?", "¿?",
+    "¿?", "¿?", "¿?", "¿?", "¿?", "¿?",
+    "?¿", "¿?", "¿?", "¿?", "¿?", "¿?"
+    ]
+    print (lab_initial)
+    print("Iniciamos el labeerinto en la posición 0, donde las demás posiciones pueden ser la posición que nos lleva a la salida o un obstáculo que nos impide avanzar.")
+    
