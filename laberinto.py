@@ -10,8 +10,8 @@ class Coordenadas:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        place_x = 0
-        place_y = 0
+    place_x = 0
+    place_y = 0
     def comparate(self,x,y):
         if(self.x==x and self.y==y):
             return True
@@ -46,4 +46,4 @@ def movement():
     print("4-> ABAJO")
     movement = int(input("Escoja un movimiento entre los disponibles."))
     if movement == 1:
-        
+        place_x 
