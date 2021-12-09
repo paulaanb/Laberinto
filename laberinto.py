@@ -20,3 +20,16 @@ class Tunel:
     def __init__(self, x1, y1, x2, y2):
         self.extremo1 = Coordenadas(x1, y1)
         self.extremo2 = Coordenadas(x2, y2)
+        
+#El laberinto resuelto es el siguiente:
+lab_solution =[
+    " ", "X", "X", "X", "X",
+    " ", "X", " ", " ", " ",
+    " ", "X", " ", "X", "S",
+    " ", "X", " ", " ", "X",
+    " ", " ", "X", " ", "X",
+    "X", " ", " ", " ", "X",
+]
+#Como salir de el
+howtogetout = ["ABAJO", "ABAJO", "ABAJO", "ABAJO","DERECHA", "ABAJO", "DERECHA", "DERECHA", "ARRIBA", "ARRIBA", "IZQUIERDA", "ARRIBA", "ARRIBA", "DERECHA", "DERECHA", "ABAJO"]
+
